@@ -10,8 +10,8 @@
 <header>Programació Assistida amb IA - DAW/ASIX</header>
 <div>
 <h2 id="qu%C3%A8-%C3%A9s-openclaw">Què és OpenClaw?</h2>
-<p><strong>OpenClaw</strong> és un agent d'IA de codi obert i autoallotjat que s'executa en una infraestructura que tu controles en lloc d'un servei al núvol gestionat.</p>
-<p>Aquest enfocament autoallotjat és fonamental, especialment si fem servir un assistent d'IA que pugui interactuar directament amb els teus propis fitxers, processos i entorn operatiu, mantenint el control sobre on resideixen les teves dades.</p>
+<p><strong>OpenClaw</strong> és un agent d'IA de codi obert i autoallotjat que s'executa en una infraestructura local en lloc d'un servei al núvol gestionat.</p>
+<p>Aquest enfocament autoallotjat és fonamental, especialment si fem servir un assistent d'IA que pugui interactuar directament amb els nostres fitxers, processos i entorn operatiu, mantenint el control sobre on resideixen les nostres dades.</p>
 </div>
 <div>
   <img src="../img/openclaw.svg" width="440px" />
@@ -24,10 +24,10 @@
 <p>Tot flueix a través d'un únic dimoni anomenat Gateway. Es manté en execució en segon pla, manté obertes les connexions de missatgeria i coordina l'agent d'IA. Aquesta és la seqüència quan envies un missatge:</p>
 <ol>
 <li>El teu text arriba a través de WhatsApp, Telegram, Discord o CLI.</li>
-<li>El Gateway el passa a un agent de programació integrat anomenat <em>Pi</em>, que pot executar ordres de l'intèrpret d'ordres (shell) en nom teu.</li>
-<li><em>Pi</em> envia la indicació (prompt) al teu proveïdor de models.</li>
-<li>El model respon amb istruccios que <em>Pi</em> executa localment.</li>
-<li>Els resultats tore a través del Gateway cap al teu xat.</li>
+<li>El Gateway el passa a un agent de programació integrat anomenat <em>Pi</em>, que pot executar ordres <em>shell</em> en nom nostre.</li>
+<li><em>Pi</em> envia la indicació (prompt) al nostre proveïdor de models.</li>
+<li>El model respon amb instruccios que <em>Pi</em> executa localment.</li>
+<li>Els resultats de l'execució arriba a través del Gateway cap al nostre xat.</li>
 </ol>
 <footer>Curs 2026-2027 • @victordomgs</footer>
 </section>
@@ -42,11 +42,11 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Programació Assistida amb IA - DAW/ASIX" data-footer="Curs 2026-2027 • @victordomgs" data-theme="custom-m0617" lang="en-US" data-marpit-pagination="5" style="--paginate:true;--header:Programació Assistida amb IA - DAW/ASIX;--footer:Curs 2026-2027 • @victordomgs;--theme:custom-m0617;" data-marpit-pagination-total="10">
 <header>Programació Assistida amb IA - DAW/ASIX</header>
 <h2 id="gateway">Gateway</h2>
-<p>El <strong>Gateway</strong> és el procés central i el pla de control local (control plane) d'OpenClaw. Funciona com la font principal d'informació i l'orquestrador de tot el sistema. Les seves funcions inclouen:</p>
+<p>El <strong>Gateway</strong> és el procés central i el pla de control local (<em>control plane</em>) d'OpenClaw. Funciona com la font principal d'informació i l'orquestrador de tot el sistema. Les seves funcions inclouen:</p>
 <ul>
-<li>Connecta l'assistent amb les diferents plataformes de missatgeria (Telegram, WhatsApp, Discord, Slack, etc.)</li>
-<li>Rep els missatges entrants, gestiona les sessions dels usuaris i manté el context.</li>
-<li>Executa les crides als proveïdors de models de llenguatge (LLM) i s'encarrega d'invocar les eines, plugins i servidors MCP.</li>
+<li>Connectar l'assistent amb les diferents plataformes de missatgeria (Telegram, WhatsApp, Discord, Slack, etc.)</li>
+<li>Rebre els missatges entrants, gestionar les sessions dels usuaris i mantenir el context.</li>
+<li>Executar les crides als proveïdors de models de llenguatge (LLM) i s'encarrega d'invocar les eines i plugins necessaris.</li>
 </ul>
 <footer>Curs 2026-2027 • @victordomgs</footer>
 </section>
